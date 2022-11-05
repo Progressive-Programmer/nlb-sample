@@ -1,0 +1,7 @@
+.cointable-component {
+    display: grid;
+    justify-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}

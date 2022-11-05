@@ -1,5 +1,5 @@
 import './App.css';
-import CoinTable from './components/Table/container';
+import CoinTable from './components/CoinTable/container';
 
 function App() {
   return (

@@ -3,10 +3,10 @@ import { baseURL } from "../utils/constants";
 
 export const CoinService = {
   getCoinMarkets: (data) => {
-    const { pageNo } = data;
+    const { pageNo, perPage } = data;
     return axios.get(
       baseURL +
-        `/api/v3/coins/markets?vs_currency=EUR&order=market_cap_desc&per_page=10&page=${pageNo}`
+        `/api/v3/coins/markets?vs_currency=EUR&order=market_cap_desc&per_page=${perPage}&page=${pageNo}`
     );
   },
   getCoinDataById: (data) => {
