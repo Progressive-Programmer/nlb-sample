@@ -11,7 +11,7 @@ import Avatar from "@mui/material/Avatar";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import Loader from "../Backdrop/component";
 
-const StickyHeadTable = (props) => {
+const CustomTable = (props) => {
   const { isLoading, hasError, currentPage, tableData, columns, onPageChange } = props;
   const [controller, setController] = useState({
     page: 0,
@@ -117,4 +117,4 @@ const StickyHeadTable = (props) => {
   );
 };
 
-export default StickyHeadTable;
+export default CustomTable;
