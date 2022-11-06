@@ -11,6 +11,6 @@ export const CoinService = {
   },
   getCoinDataById: (data) => {
     const { coinId } = data;
-    return axios.post(baseURL + `/api/v3/coins/${coinId}`);
+    return axios.get(baseURL + `/api/v3/coins/${coinId}`);
   },
 };

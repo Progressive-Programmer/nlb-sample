@@ -7,7 +7,7 @@ const initialState = {
   currentResponseId: undefined,
   currentPage: '',
   markets: [],
-  coinData: {},
+  coinData: undefined
 };
 
 // making async call for apis

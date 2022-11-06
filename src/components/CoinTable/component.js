@@ -43,18 +43,31 @@ const CoinTable = (props) => {
     getCoinDateByCoinId,
   } = props;
 
-  const onPageChange = async (pageNo, perPage) => {
-    await getCoinMarketsBypage({ pageNo, perPage });
+  const handlePageChange = async (pageNo, perPage) => {
+    try {
+      await getCoinMarketsBypage({ pageNo, perPage });
+    } catch (error) {
+      console.log(error)
+    }
   };
+
+  const handleRowClick = async (coinId) => {
+    try {
+      await getCoinDateByCoinId({ coinId })
+    } catch (error) {
+     console.log(error) 
+    }
+  }
   return (
     <div className="cointable-component">
       <CustomTable
         isLoading={isLoading}
-        hasError={hasError}
         currentPage={currentPage}
         tableData={markets}
+        coinData={coinData}
         columns={columns}
-        onPageChange={onPageChange}
+        onPageChange={handlePageChange}
+        onRowClick={handleRowClick}
       />
     </div>
   );
