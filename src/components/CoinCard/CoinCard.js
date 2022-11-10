@@ -19,6 +19,7 @@ import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
 import Link from "@mui/material/Link";
+import CloseIcon from "@mui/icons-material/Close";
 
 const style = {
   position: "absolute",
@@ -70,6 +71,11 @@ const CoinCard = (props) => {
             avatar={<Avatar alt={data?.name} src={data?.image?.thumb} />}
             title={data?.name}
             subheader={data?.symbol}
+            action={
+              <IconButton aria-label="close" onClick={handleClose}>
+                <CloseIcon />
+              </IconButton>
+            }
           />
           <CardContent>
             <Grid
@@ -88,7 +94,7 @@ const CoinCard = (props) => {
                       </TableCell>
                     </TableRow>
                     <TableRow
-                      key={`${data.name}-2`} 
+                      key={`${data.name}-2`}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell component="th" scope="row">
@@ -97,7 +103,7 @@ const CoinCard = (props) => {
                         </Typography>
                       </TableCell>
                       <TableCell align="right">
-                        {data?.market_cap?.eur ? data.market_cap.eur : '--'}
+                        {data?.market_cap?.eur ? data.market_cap.eur : "--"}
                       </TableCell>
                     </TableRow>
                   </TableBody>
@@ -107,7 +113,7 @@ const CoinCard = (props) => {
                 <Table aria-label="a dense table" size="small">
                   <TableBody>
                     <TableRow
-                      key={`${data.name}-3`} 
+                      key={`${data.name}-3`}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell component="th" scope="row">
@@ -116,11 +122,13 @@ const CoinCard = (props) => {
                         </Typography>
                       </TableCell>
                       <TableCell align="right">
-                        {data?.hashing_algorithm ? data.hashing_algorithm : '--'}
+                        {data?.hashing_algorithm
+                          ? data.hashing_algorithm
+                          : "--"}
                       </TableCell>
                     </TableRow>
                     <TableRow
-                      key={`${data.name}-4`} 
+                      key={`${data.name}-4`}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
                       <TableCell component="th" scope="row">
@@ -128,7 +136,9 @@ const CoinCard = (props) => {
                           Genesis Date
                         </Typography>
                       </TableCell>
-                      <TableCell align="right">{data?.genesis_date ? data.genesis_date : '--' }</TableCell>
+                      <TableCell align="right">
+                        {data?.genesis_date ? data.genesis_date : "--"}
+                      </TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
