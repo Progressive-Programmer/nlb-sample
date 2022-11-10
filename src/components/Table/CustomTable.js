@@ -57,7 +57,7 @@ const CustomTable = (props) => {
     <Paper sx={{ width: "90%", overflow: "hidden" }}>
       {isLoading ? <Loader isOpen={isLoading} /> : null}
       <TableContainer sx={{ maxHeight: 650 }}>
-        <Table stickyHeader aria-label="sticky table">
+        <Table stickyHeader aria-label="sticky table" size="small">
           <TableHead>
             <TableRow>
               {columns &&
