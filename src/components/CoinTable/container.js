@@ -1,6 +1,6 @@
 import { connect } from "react-redux";
 import { getCoinDataById, getCoinMarkets } from "../../redux/slices/coinSlice";
-import CoinTable from "./component";
+import CoinTable from "./CoinTable";
 
 const mapStateToProps = (state, ownPros) => {
   let coins = state.coins

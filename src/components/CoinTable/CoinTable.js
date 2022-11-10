@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import CustomTable from "../Table/component";
+import React from "react";
+import CustomTable from "../Table/CustomTable";
 import "./index.css";
 
 const columns = [
