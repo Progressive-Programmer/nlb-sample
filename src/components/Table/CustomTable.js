@@ -9,8 +9,8 @@ import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import Avatar from "@mui/material/Avatar";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Loader from "../Backdrop/component";
-import BasicModal from "../CoinCard/component";
+import Loader from "../Backdrop/Loader";
+import CoinCard from "../CoinCard/CoinCard";
 
 const CustomTable = (props) => {
   const { isLoading, tableData, columns, coinData, onPageChange, onRowClick } =
@@ -128,7 +128,7 @@ const CustomTable = (props) => {
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
       {!isLoading && isModalOpen && (
-        <BasicModal
+        <CoinCard
           isLoading={isLoading}
           isOpen={isModalOpen}
           data={coinData ? coinData : {}}

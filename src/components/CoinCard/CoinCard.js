@@ -44,7 +44,7 @@ const ExpandMore = styled((props) => {
   }),
 }));
 
-const BasicModal = (props) => {
+const CoinCard = (props) => {
   const { isLoading, isOpen, data, setIsModalOpen } = props;
   const [expanded, setExpanded] = useState(false);
 
@@ -160,4 +160,4 @@ const BasicModal = (props) => {
   );
 };
 
-export default BasicModal;
+export default CoinCard;
