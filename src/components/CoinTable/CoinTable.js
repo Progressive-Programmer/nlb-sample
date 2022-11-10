@@ -8,26 +8,28 @@ const columns = [
   {
     id: "symbol",
     label: "Symbol",
-    minWidth: 170,
-    align: "right",
+    minWidth: 100,
   },
   {
     id: "current_price",
     label: "Current Price",
     minWidth: 170,
     align: "right",
+    format: (value) => `$${value}`
   },
   {
     id: "high_24h",
     label: "High 24 Hr Price",
     minWidth: 170,
     align: "right",
+    format: (value) => `$${value}`
   },
   {
     id: "low_24h",
     label: "Low 24 Hr Price",
     minWidth: 170,
     align: "right",
+    format: (value) => `$${value}`
   },
 ];
 
