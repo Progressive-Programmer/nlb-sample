@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from "react";
-import Paper from "@mui/material/Paper";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TablePagination from "@mui/material/TablePagination";
-import TableRow from "@mui/material/TableRow";
-import Avatar from "@mui/material/Avatar";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Loader from "../Backdrop/Loader";
-import CoinCard from "../CoinCard/CoinCard";
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
+import Paper from '@mui/material/Paper';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
+import TableContainer from '@mui/material/TableContainer';
+import TableHead from '@mui/material/TableHead';
+import TablePagination from '@mui/material/TablePagination';
+import TableRow from '@mui/material/TableRow';
+import Avatar from '@mui/material/Avatar';
+import ListItemAvatar from '@mui/material/ListItemAvatar';
+import Loader from '../Backdrop/Loader';
+import CoinCard from '../CoinCard/CoinCard';
 
 const CustomTable = (props) => {
-  const { isLoading, tableData, columns, coinData, onPageChange, onRowClick } =
-    props;
+  const { isLoading, tableData, columns, coinData, onPageChange, onRowClick } = props;
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [controller, setController] = useState({
     page: 0,
-    rowsPerPage: 10,
+    rowsPerPage: 10
   });
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const CustomTable = (props) => {
   const handleChangePage = (event, newPage) => {
     setController({
       ...controller,
-      page: newPage,
+      page: newPage
     });
   };
 
@@ -44,7 +44,7 @@ const CustomTable = (props) => {
     setController({
       ...controller,
       rowsPerPage: parseInt(event.target.value, 10),
-      page: 0,
+      page: 0
     });
   };
 
@@ -54,7 +54,7 @@ const CustomTable = (props) => {
   };
 
   return (
-    <Paper sx={{ width: "90%", overflow: "hidden" }}>
+    <Paper sx={{ width: '90%', overflow: 'hidden' }}>
       {isLoading ? <Loader isOpen={isLoading} /> : null}
       <TableContainer sx={{ maxHeight: 650 }}>
         <Table stickyHeader aria-label="sticky table" size="small">
@@ -68,8 +68,7 @@ const CustomTable = (props) => {
                     <TableCell
                       key={column.id}
                       align={column.align}
-                      style={{ minWidth: column.minWidth }}
-                    >
+                      style={{ minWidth: column.minWidth }}>
                       {column.label}
                     </TableCell>
                   )
@@ -86,13 +85,12 @@ const CustomTable = (props) => {
                         role="checkbox"
                         tabIndex={-1}
                         key={`${row.code}-${i}`}
-                        style={{ cursor: "pointer" }}
-                        onClick={() => handleClickRow(row)}
-                      >
+                        style={{ cursor: 'pointer' }}
+                        onClick={() => handleClickRow(row)}>
                         {columns &&
                           columns.map((column) => {
                             const value = row[column.id];
-                            if (column.id === "image") {
+                            if (column.id === 'image') {
                               // table cell spearation for image type and text
                               return (
                                 <TableCell key={column.id} align={column.align}>
@@ -104,7 +102,7 @@ const CustomTable = (props) => {
                             } else {
                               return (
                                 <TableCell key={column.id} align={column.align}>
-                                  {column.format && typeof value === "number"
+                                  {column.format && typeof value === 'number'
                                     ? column.format(value)
                                     : value}
                                 </TableCell>
@@ -114,7 +112,7 @@ const CustomTable = (props) => {
                       </TableRow>
                     );
                   })
-              : "No Data Available"}
+              : 'No Data Available'}
           </TableBody>
         </Table>
       </TableContainer>
@@ -131,7 +129,7 @@ const CustomTable = (props) => {
         <CoinCard
           isLoading={isLoading}
           isOpen={isModalOpen}
-          data={coinData ? coinData : {}}
+          data={coinData || {}}
           setIsModalOpen={setIsModalOpen}
         />
       )}
@@ -140,3 +138,21 @@ const CustomTable = (props) => {
 };
 
 export default CustomTable;
+
+CustomTable.propTypes = {
+  isLoading: PropTypes.bool,
+  tableData: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
+  columns: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
+  coinData: PropTypes.objectOf(PropTypes.string),
+  onPageChange: PropTypes.func,
+  onRowClick: PropTypes.func
+};
+
+CustomTable.defaultProps = {
+  isLoading: false,
+  tableData: [],
+  columns: [],
+  coinData: {},
+  onPageChange: () => {},
+  onRowClick: () => {}
+};

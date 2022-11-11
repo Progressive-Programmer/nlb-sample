@@ -1,10 +1,10 @@
 # Running the app
 
-First install the dependencies with 
+First install the dependencies with
 
 ### `npm install`
 
-Running the application 
+Running the application
 
 ### `npm start`
 
