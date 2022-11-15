@@ -1,0 +1,159 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoinTable has props should render correctly 1`] = `
+<div
+  className="cointable-component"
+>
+  <CustomTable
+    coinData={Object {}}
+    columns={
+      Array [
+        Object {
+          "id": "image",
+          "label": "Coin",
+          "minWidth": 100,
+        },
+        Object {
+          "id": "name",
+          "label": "Name",
+          "minWidth": 100,
+        },
+        Object {
+          "id": "symbol",
+          "label": "Symbol",
+          "minWidth": 100,
+        },
+        Object {
+          "align": "right",
+          "format": [Function],
+          "id": "current_price",
+          "label": "Current Price",
+          "minWidth": 170,
+        },
+        Object {
+          "align": "right",
+          "format": [Function],
+          "id": "high_24h",
+          "label": "High 24 Hr Price",
+          "minWidth": 170,
+        },
+        Object {
+          "align": "right",
+          "format": [Function],
+          "id": "low_24h",
+          "label": "Low 24 Hr Price",
+          "minWidth": 170,
+        },
+      ]
+    }
+    currentPage={0}
+    isLoading={false}
+    onPageChange={[Function]}
+    onRowClick={[Function]}
+    tableData={
+      Array [
+        Object {
+          "current_price": 1,
+          "id": 1,
+          "image": "image",
+          "name": "name",
+          "symbol": "byt",
+        },
+        Object {
+          "current_price": 1,
+          "id": 2,
+          "image": "image",
+          "name": "name",
+          "symbol": "byt",
+        },
+        Object {
+          "current_price": 1,
+          "id": 3,
+          "image": "image",
+          "name": "name",
+          "symbol": "byt",
+        },
+      ]
+    }
+  />
+</div>
+`;
+
+exports[`CustomTable has props should render correctly 1`] = `
+<div
+  className="cointable-component"
+>
+  <CustomTable
+    coinData={Object {}}
+    columns={
+      Array [
+        Object {
+          "id": "image",
+          "label": "Coin",
+          "minWidth": 100,
+        },
+        Object {
+          "id": "name",
+          "label": "Name",
+          "minWidth": 100,
+        },
+        Object {
+          "id": "symbol",
+          "label": "Symbol",
+          "minWidth": 100,
+        },
+        Object {
+          "align": "right",
+          "format": [Function],
+          "id": "current_price",
+          "label": "Current Price",
+          "minWidth": 170,
+        },
+        Object {
+          "align": "right",
+          "format": [Function],
+          "id": "high_24h",
+          "label": "High 24 Hr Price",
+          "minWidth": 170,
+        },
+        Object {
+          "align": "right",
+          "format": [Function],
+          "id": "low_24h",
+          "label": "Low 24 Hr Price",
+          "minWidth": 170,
+        },
+      ]
+    }
+    currentPage={0}
+    isLoading={false}
+    onPageChange={[Function]}
+    onRowClick={[Function]}
+    tableData={
+      Array [
+        Object {
+          "current_price": 1,
+          "id": 1,
+          "image": "image",
+          "name": "name",
+          "symbol": "byt",
+        },
+        Object {
+          "current_price": 1,
+          "id": 2,
+          "image": "image",
+          "name": "name",
+          "symbol": "byt",
+        },
+        Object {
+          "current_price": 1,
+          "id": 3,
+          "image": "image",
+          "name": "name",
+          "symbol": "byt",
+        },
+      ]
+    }
+  />
+</div>
+`;

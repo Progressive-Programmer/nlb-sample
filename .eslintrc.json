@@ -26,6 +26,7 @@
         "unnamedComponents": "arrow-function"
       }
     ],
+    "react/jsx-boolean-value":"off",
     "react/no-array-index-key": "off",
     "react/jsx-props-no-spreading": ["error", { "custom": "ignore" }],
     "linebreak-style": "off",

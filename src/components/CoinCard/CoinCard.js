@@ -165,7 +165,7 @@ export default CoinCard;
 
 CoinCard.propTypes = {
   isOpen: PropTypes.bool,
-  data: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])),
+  data: PropTypes.objectOf(PropTypes.oneOfType([PropTypes.string, PropTypes.object])),
   setIsModalOpen: PropTypes.func
 };
 
