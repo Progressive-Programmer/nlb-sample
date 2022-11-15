@@ -1,0 +1,252 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomTable has props should render correctly 1`] = `
+<ForwardRef(Paper)
+  sx={
+    Object {
+      "overflow": "hidden",
+      "width": "90%",
+    }
+  }
+>
+  <ForwardRef(TableContainer)
+    sx={
+      Object {
+        "maxHeight": 650,
+      }
+    }
+  >
+    <ForwardRef(Table)
+      aria-label="sticky table"
+      size="small"
+      stickyHeader={true}
+    >
+      <ForwardRef(TableHead)>
+        <ForwardRef(TableRow)>
+          <ForwardRef(TableCell)
+            key="image"
+            style={
+              Object {
+                "minWidth": 100,
+              }
+            }
+          >
+            Coin
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            key="name"
+            style={
+              Object {
+                "minWidth": 100,
+              }
+            }
+          >
+            Name
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            key="symbol"
+            style={
+              Object {
+                "minWidth": 100,
+              }
+            }
+          >
+            Symbol
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            align="right"
+            key="current_price"
+            style={
+              Object {
+                "minWidth": 170,
+              }
+            }
+          >
+            Current Price
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            align="right"
+            key="high_24h"
+            style={
+              Object {
+                "minWidth": 170,
+              }
+            }
+          >
+            High 24 Hr Price
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            align="right"
+            key="low_24h"
+            style={
+              Object {
+                "minWidth": 170,
+              }
+            }
+          >
+            Low 24 Hr Price
+          </ForwardRef(TableCell)>
+        </ForwardRef(TableRow)>
+      </ForwardRef(TableHead)>
+      <ForwardRef(TableBody)>
+        <ForwardRef(TableRow)
+          hover={true}
+          key="undefined-0"
+          onClick={[Function]}
+          role="checkbox"
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+          tabIndex={-1}
+        >
+          <ForwardRef(TableCell)
+            key="image"
+          >
+            <ForwardRef(ListItemAvatar)>
+              <ForwardRef(Avatar)
+                alt="name"
+                src="image"
+              />
+            </ForwardRef(ListItemAvatar)>
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            key="name"
+          >
+            name
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            key="symbol"
+          >
+            byt
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            align="right"
+            key="current_price"
+          >
+            $1
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            align="right"
+            key="high_24h"
+          />
+          <ForwardRef(TableCell)
+            align="right"
+            key="low_24h"
+          />
+        </ForwardRef(TableRow)>
+        <ForwardRef(TableRow)
+          hover={true}
+          key="undefined-1"
+          onClick={[Function]}
+          role="checkbox"
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+          tabIndex={-1}
+        >
+          <ForwardRef(TableCell)
+            key="image"
+          >
+            <ForwardRef(ListItemAvatar)>
+              <ForwardRef(Avatar)
+                alt="name"
+                src="image"
+              />
+            </ForwardRef(ListItemAvatar)>
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            key="name"
+          >
+            name
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            key="symbol"
+          >
+            byt
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            align="right"
+            key="current_price"
+          >
+            $1
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            align="right"
+            key="high_24h"
+          />
+          <ForwardRef(TableCell)
+            align="right"
+            key="low_24h"
+          />
+        </ForwardRef(TableRow)>
+        <ForwardRef(TableRow)
+          hover={true}
+          key="undefined-2"
+          onClick={[Function]}
+          role="checkbox"
+          style={
+            Object {
+              "cursor": "pointer",
+            }
+          }
+          tabIndex={-1}
+        >
+          <ForwardRef(TableCell)
+            key="image"
+          >
+            <ForwardRef(ListItemAvatar)>
+              <ForwardRef(Avatar)
+                alt="name"
+                src="image"
+              />
+            </ForwardRef(ListItemAvatar)>
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            key="name"
+          >
+            name
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            key="symbol"
+          >
+            byt
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            align="right"
+            key="current_price"
+          >
+            $1
+          </ForwardRef(TableCell)>
+          <ForwardRef(TableCell)
+            align="right"
+            key="high_24h"
+          />
+          <ForwardRef(TableCell)
+            align="right"
+            key="low_24h"
+          />
+        </ForwardRef(TableRow)>
+      </ForwardRef(TableBody)>
+    </ForwardRef(Table)>
+  </ForwardRef(TableContainer)>
+  <ForwardRef(TablePagination)
+    component="div"
+    count={100}
+    onPageChange={[Function]}
+    onRowsPerPageChange={[Function]}
+    page={0}
+    rowsPerPage={10}
+    rowsPerPageOptions={
+      Array [
+        10,
+        25,
+        100,
+      ]
+    }
+  />
+</ForwardRef(Paper)>
+`;

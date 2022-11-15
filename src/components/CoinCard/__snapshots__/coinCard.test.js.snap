@@ -1,0 +1,222 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoinCard has props should render correctly 1`] = `
+<div>
+  <ForwardRef(Modal)
+    aria-describedby="modal-modal-description"
+    aria-labelledby="modal-modal-title"
+    onClose={[Function]}
+    open={true}
+  >
+    <ForwardRef(Card)
+      sx={
+        Object {
+          "bgcolor": "background.paper",
+          "boxShadow": 24,
+          "left": "50%",
+          "maxHeight": 600,
+          "minWidth": 600,
+          "overflow": "scroll",
+          "p": 4,
+          "position": "absolute",
+          "top": "50%",
+          "transform": "translate(-50%, -50%)",
+        }
+      }
+    >
+      <ForwardRef(CardHeader)
+        action={
+          <ForwardRef(IconButton)
+            aria-label="close"
+            onClick={[Function]}
+          >
+            <Memo />
+          </ForwardRef(IconButton)>
+        }
+        avatar={
+          <ForwardRef(Avatar)
+            alt="Test name"
+          />
+        }
+        subheader="bxy"
+        title="Test name"
+      />
+      <ForwardRef(CardContent)>
+        <ForwardRef(Grid)
+          columnSpacing={
+            Object {
+              "md": 3,
+              "sm": 2,
+              "xs": 1,
+            }
+          }
+          container={true}
+          rowSpacing={1}
+        >
+          <ForwardRef(Grid)
+            xs={6}
+          >
+            <ForwardRef(Table)
+              aria-label="a dense table"
+              size="small"
+            >
+              <ForwardRef(TableBody)>
+                <ForwardRef(TableRow)
+                  key="Test name-1"
+                  sx={
+                    Object {
+                      "th": Object {
+                        "border": 0,
+                      },
+                    }
+                  }
+                >
+                  <ForwardRef(TableCell)
+                    component="th"
+                    scope="row"
+                  >
+                    <ForwardRef(Typography)
+                      color="text.secondary"
+                      variant="body2"
+                    >
+                      <ForwardRef(Link)
+                        href=""
+                      >
+                        Homepage
+                      </ForwardRef(Link)>
+                    </ForwardRef(Typography)>
+                  </ForwardRef(TableCell)>
+                </ForwardRef(TableRow)>
+                <ForwardRef(TableRow)
+                  key="Test name-2"
+                  sx={
+                    Object {
+                      "&:last-child td, &:last-child th": Object {
+                        "border": 0,
+                      },
+                    }
+                  }
+                >
+                  <ForwardRef(TableCell)
+                    component="th"
+                    scope="row"
+                  >
+                    <ForwardRef(Typography)
+                      color="text.secondary"
+                      variant="body2"
+                    >
+                      Market cap in Euro
+                    </ForwardRef(Typography)>
+                  </ForwardRef(TableCell)>
+                  <ForwardRef(TableCell)
+                    align="right"
+                  >
+                    2
+                  </ForwardRef(TableCell)>
+                </ForwardRef(TableRow)>
+              </ForwardRef(TableBody)>
+            </ForwardRef(Table)>
+          </ForwardRef(Grid)>
+          <ForwardRef(Grid)
+            xs={6}
+          >
+            <ForwardRef(Table)
+              aria-label="a dense table"
+              size="small"
+            >
+              <ForwardRef(TableBody)>
+                <ForwardRef(TableRow)
+                  key="Test name-3"
+                  sx={
+                    Object {
+                      "&:last-child td, &:last-child th": Object {
+                        "border": 0,
+                      },
+                    }
+                  }
+                >
+                  <ForwardRef(TableCell)
+                    component="th"
+                    scope="row"
+                  >
+                    <ForwardRef(Typography)
+                      color="text.secondary"
+                      variant="body2"
+                    >
+                      Hashing Algorithm
+                    </ForwardRef(Typography)>
+                  </ForwardRef(TableCell)>
+                  <ForwardRef(TableCell)
+                    align="right"
+                  >
+                    --
+                  </ForwardRef(TableCell)>
+                </ForwardRef(TableRow)>
+                <ForwardRef(TableRow)
+                  key="Test name-4"
+                  sx={
+                    Object {
+                      "&:last-child td, &:last-child th": Object {
+                        "border": 0,
+                      },
+                    }
+                  }
+                >
+                  <ForwardRef(TableCell)
+                    component="th"
+                    scope="row"
+                  >
+                    <ForwardRef(Typography)
+                      color="text.secondary"
+                      variant="body2"
+                    >
+                      Genesis Date
+                    </ForwardRef(Typography)>
+                  </ForwardRef(TableCell)>
+                  <ForwardRef(TableCell)
+                    align="right"
+                  >
+                    --
+                  </ForwardRef(TableCell)>
+                </ForwardRef(TableRow)>
+              </ForwardRef(TableBody)>
+            </ForwardRef(Table)>
+          </ForwardRef(Grid)>
+        </ForwardRef(Grid)>
+      </ForwardRef(CardContent)>
+      <ForwardRef(CardActions)
+        disableSpacing={true}
+      >
+        <Styled(Component)
+          aria-expanded={false}
+          aria-label="show more"
+          expand={false}
+          onClick={[Function]}
+        >
+          <Memo(ForwardRef(ExpandMoreIcon)) />
+        </Styled(Component)>
+      </ForwardRef(CardActions)>
+      <ForwardRef(Collapse)
+        in={false}
+        timeout="auto"
+        unmountOnExit={true}
+      >
+        <ForwardRef(CardContent)>
+          <ForwardRef(Typography)
+            paragraph={true}
+          >
+            Description:
+          </ForwardRef(Typography)>
+          <ForwardRef(Typography)
+            color="text.secondary"
+            paragraph={true}
+            variant="body2"
+          >
+            New Description
+          </ForwardRef(Typography)>
+        </ForwardRef(CardContent)>
+      </ForwardRef(Collapse)>
+    </ForwardRef(Card)>
+  </ForwardRef(Modal)>
+</div>
+`;
