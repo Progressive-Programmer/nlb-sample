@@ -16,21 +16,21 @@ const columns = [
     label: 'Current Price',
     minWidth: 170,
     align: 'right',
-    format: (value) => `$${value}`
+    format: (value) => `€ ${value}`
   },
   {
     id: 'high_24h',
     label: 'High 24 Hr Price',
     minWidth: 170,
     align: 'right',
-    format: (value) => `$${value}`
+    format: (value) => `€ ${value}`
   },
   {
     id: 'low_24h',
     label: 'Low 24 Hr Price',
     minWidth: 170,
     align: 'right',
-    format: (value) => `$${value}`
+    format: (value) => `€ ${value}`
   }
 ];
 
